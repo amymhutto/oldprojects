@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTeam">
+
+    <EditText
+        android:id="@+id/newTeamEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/newTeamNameHint"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verifyEmailEditText" />
+
+    <EditText
+        android:id="@+id/newAddressEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="@string/newAddressHint"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/newTeamEditText"
+        app:layout_constraintTop_toBottomOf="@+id/newTeamEditText" />
+
+    <EditText
+        android:id="@+id/newCityEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="@string/newCityHint"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/newAddressEditText"
+        app:layout_constraintTop_toBottomOf="@+id/newAddressEditText" />
+
+    <EditText
+        android:id="@+id/newStateEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:hint="@string/newStateHint"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/newCityEditText"
+        app:layout_constraintTop_toBottomOf="@+id/newCityEditText" />
+
+    <EditText
+        android:id="@+id/newZipEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="@string/newZipHint"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/newStateEditText"
+        app:layout_constraintTop_toBottomOf="@+id/newStateEditText" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="@string/submitbuttontext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newZipEditText" />
+
+    <EditText
+        android:id="@+id/verifyEmailEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:ems="10"
+        android:hint="@string/verifyEmailText"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/newTeamEditText"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
